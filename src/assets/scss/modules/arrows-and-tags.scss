@@ -1,0 +1,145 @@
+.main-tag {
+    color: #00003c;
+    font-size: 8vw;
+    &:nth-of-type(even) {
+        text-align: right;
+    }
+}
+.tag {
+    color: #00003c;
+    font-size: 4vw;
+    &:nth-of-type(even){
+        text-align: right;
+    }
+}
+.arrows {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.arrows-down {
+    bottom: 3vh;
+}
+.arrows-up {
+    top: 3vh;
+    svg {
+        transform: rotateX(180deg)
+    }
+}
+.arrows-text {
+    color: #00005a;
+    font-size: 4.5vw;
+}
+.button {
+    width: 10vw;
+    cursor: pointer;
+}
+.arrow {
+    width: 100%;
+    fill:#00005a;
+}
+@media (min-width: $phoneWidth) {
+    .main-tag {
+        font-size: 5.6vw;
+    }
+    .tag {
+        font-size: 2.8vw;
+    }
+    .arrows-text {
+        font-size: 3.5vw;
+    }
+    .button {
+        width: 7vw
+    }
+}
+@media screen and (max-aspect-ratio: 1/1) {
+    @media (min-width: $tableWidth) {
+        .main-tag {
+            font-size: 5vw;
+        }
+        .tag {
+            font-size: 2.5vw;
+        }
+        .arrows-text {
+            font-size: 3.125vw;
+        }
+        .button {
+            width: 6.25vw
+        }
+    }
+    @media (min-width: $smDesktopWidth) {
+        .main-tag {
+            font-size: 6vw;
+        }
+        .tag {
+            font-size: 3vw;
+        }
+        .arrows-text {
+            font-size: 3.75vw;
+        }
+        .button {
+            width: 7.5vw
+        }
+    }
+    @media (min-width: $desktopWidth) {
+        .main-tag {
+            font-size: 7.2vw;
+        }
+        .tag {
+            font-size: 3.6vw;
+        }
+        .arrows-text {
+            font-size: 4.5vw;
+        }
+        .button {
+            width: 9vw
+        }
+    }
+}
+@media screen and (min-aspect-ratio: 1/1) {
+    @media (min-width: $tableWidth) {
+        .main-tag {
+            font-size: 3.67vw;
+        }
+        .tag {
+            font-size: 1.83vw;
+        }
+        .arrows-text {
+            font-size: 2.3vw;
+        }
+        .button {
+            width: 4.58vw
+        }
+    }
+    @media (min-width: $smDesktopWidth) {
+        .main-tag {
+            font-size: 2.88vw;
+        }
+        .tag {
+            font-size: 1.51vw;
+        }
+        .arrows-text {
+            font-size: 1.73vw;
+        }
+        .button {
+            width: 3.6vw
+        }
+    }
+    @media (min-width: $desktopWidth) {
+        .main-tag {
+            font-size: 2.25vw;
+        }
+        .tag {
+            font-size: 1.12vw;
+        }
+        .arrows-text {
+            font-size: 1.35vw;
+        }
+        .button {
+            width: 2.7vw
+        }
+    }
+}
