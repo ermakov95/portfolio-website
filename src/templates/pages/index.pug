@@ -1,0 +1,121 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Portfolio
+  body
+    .wrap
+      header
+        picture.background-image
+          source(media="(min-width: 1367px)", srcset="~@/img/code-lrDesktop@1920.webp, ~@/img/code-lrDesktop@3840.webp 2x", type="image/webp", alt="Фон", loading="lazy")
+          source(media="(min-width: 1367px)", srcset="~@/img/code-lrDesktop@1920.jpg, ~@/img/code-lrDesktop@3840.jpg 2x", type="image/jpeg", alt="Фон", loading="lazy")
+          source(media="(min-width: 769px)", srcset="~@/img/code-desktop@1366.webp, ~@/img/code-desktop@2732.webp 2x", type="image/webp", alt="Фон", loading="lazy")
+          source(media="(min-width: 769px)", srcset="~@/img/code-desktop@1366.jpg, ~@/img/code-desktop@2732.jpg 2x", type="image/jpeg", alt="Фон", loading="lazy")
+          source(media="(max-width: 768px)", srcset="~@/img/code-tablet@768.webp, ~@/img/code-tablet@1536.webp 2x", type="image/webp", alt="Фон", loading="lazy")
+          source(media="(max-width: 768px)", srcset="~@/img/code-tablet@768.jpg, ~@/img/code-tablet@1536.jpg 2x", type="image/jpeg", alt="Фон", loading="lazy")
+          img.background-image(src="~@/img/code-desktop@1366.jpg", type="image/jpeg", alt="Фон", loading="lazy")
+        p.main-tag &ltheader&gt
+        .header-inner
+          p.tag &ltdiv&gt
+          .greeting hello there!
+          p.tag &lt/div&gt
+          p.tag &lth1&gt
+          h1.main-heading I am Ivan Ermakov — beginner web-developer.
+          .space
+          .main-heading Я Иван Ермаков — начинающий веб-разработчик.
+          p.tag &lt/h1&gt
+        .arrows.arrows-down 
+          p.arrows-text &ltp&gtScroll down&lt/p&gt
+          .button#button1
+            <svg class = "arrow" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.85355 2.14645C3.65829 1.95118 3.34171 1.95118 3.14645 2.14645C2.95118 2.34171 2.95118 2.65829 3.14645 2.85355L7.14645 6.85355C7.34171 7.04882 7.65829 7.04882 7.85355 6.85355L11.8536 2.85355C12.0488 2.65829 12.0488 2.34171 11.8536 2.14645C11.6583 1.95118 11.3417 1.95118 11.1464 2.14645L7.5 5.79289L3.85355 2.14645ZM3.85355 8.14645C3.65829 7.95118 3.34171 7.95118 3.14645 8.14645C2.95118 8.34171 2.95118 8.65829 3.14645 8.85355L7.14645 12.8536C7.34171 13.0488 7.65829 13.0488 7.85355 12.8536L11.8536 8.85355C12.0488 8.65829 12.0488 8.34171 11.8536 8.14645C11.6583 7.95118 11.3417 7.95118 11.1464 8.14645L7.5 11.7929L3.85355 8.14645Z" />
+            </svg>
+        p.main-tag &lt/header&gt
+      section.portfolio
+        picture.background-image
+          source(media="(min-width: 1367px)", src="~@/img/code2-lrDesktop@1920.webp", type="image/webp", alt="Фон", loading="lazy")
+          source(media="(min-width: 1367px)", src="~@/img/code2-lrDesktop@1920.jpg", type="image/jpeg", alt="Фон", loading="lazy")
+          source(media="(min-width: 769px)", srcset="~@/img/code2-desktop@1366.webp, ~@/img/code2-lrDesktop@1920.webp 2x", type="image/webp", alt="Фон", loading="lazy")
+          source(media="(min-width: 769px)", srcset="~@/img/code2-desktop@1366.jpg, ~@/img/code2-lrDesktop@1920.jpg 2x", type="image/jpeg", alt="Фон", loading="lazy")
+          source(media="(max-width: 768px)", srcset="~@/img/code2-tablet@768.webp, ~@/img/code2-tablet@1536.webp 2x", type="image/webp", alt="Фон", loading="lazy")
+          source(media="(max-width: 768px)", srcset="~@/img/code2-tablet@768.jpg, ~@/img/code2-tablet@1536.jpg 2x", type="image/jpeg", alt="Фон", loading="lazy")
+          img.background-image(src="~@/img/code2-desktop@1366.jpg", type="image/jpeg", alt="Фон", loading="lazy")
+        p.main-tag &ltsection&gt
+        .arrows.arrows-up 
+          .button#button2
+            <svg class = "arrow" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.85355 2.14645C3.65829 1.95118 3.34171 1.95118 3.14645 2.14645C2.95118 2.34171 2.95118 2.65829 3.14645 2.85355L7.14645 6.85355C7.34171 7.04882 7.65829 7.04882 7.85355 6.85355L11.8536 2.85355C12.0488 2.65829 12.0488 2.34171 11.8536 2.14645C11.6583 1.95118 11.3417 1.95118 11.1464 2.14645L7.5 5.79289L3.85355 2.14645ZM3.85355 8.14645C3.65829 7.95118 3.34171 7.95118 3.14645 8.14645C2.95118 8.34171 2.95118 8.65829 3.14645 8.85355L7.14645 12.8536C7.34171 13.0488 7.65829 13.0488 7.85355 12.8536L11.8536 8.85355C12.0488 8.65829 12.0488 8.34171 11.8536 8.14645C11.6583 7.95118 11.3417 7.95118 11.1464 8.14645L7.5 11.7929L3.85355 8.14645Z" />
+            </svg>
+          p.arrows-text &ltp&gtScroll up&lt/p&gt
+        .portfolio-inner
+          p.tag &ltdiv&gt
+          .slider 
+            .slider-button.slider-back
+              <svg class = "arrow" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.85355 2.14645C3.65829 1.95118 3.34171 1.95118 3.14645 2.14645C2.95118 2.34171 2.95118 2.65829 3.14645 2.85355L7.14645 6.85355C7.34171 7.04882 7.65829 7.04882 7.85355 6.85355L11.8536 2.85355C12.0488 2.65829 12.0488 2.34171 11.8536 2.14645C11.6583 1.95118 11.3417 1.95118 11.1464 2.14645L7.5 5.79289L3.85355 2.14645ZM3.85355 8.14645C3.65829 7.95118 3.34171 7.95118 3.14645 8.14645C2.95118 8.34171 2.95118 8.65829 3.14645 8.85355L7.14645 12.8536C7.34171 13.0488 7.65829 13.0488 7.85355 12.8536L11.8536 8.85355C12.0488 8.65829 12.0488 8.34171 11.8536 8.14645C11.6583 7.95118 11.3417 7.95118 11.1464 8.14645L7.5 11.7929L3.85355 8.14645Z" />
+              </svg>
+            .slider-inner 
+              .slider-line
+                a.slide(href="./sedona/index.html")
+                  .title-slide Седона - простой 3-х страничный сайт
+                  img.img-slide(src="~@/img/sedona.png", loading="lazy", alt="Седона - простой 3-х страничный сайт")
+                a.slide(href="https://github.com/ermakov95/portfolio-website")
+                  .title-slide Данный лендинг-портфолио
+                  img.img-slide(src="~@/img/portfolio.png", loading="lazy", alt="Данный лендинг-портфолио")
+            .slider-button.slider-next
+              <svg class = "arrow" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.85355 2.14645C3.65829 1.95118 3.34171 1.95118 3.14645 2.14645C2.95118 2.34171 2.95118 2.65829 3.14645 2.85355L7.14645 6.85355C7.34171 7.04882 7.65829 7.04882 7.85355 6.85355L11.8536 2.85355C12.0488 2.65829 12.0488 2.34171 11.8536 2.14645C11.6583 1.95118 11.3417 1.95118 11.1464 2.14645L7.5 5.79289L3.85355 2.14645ZM3.85355 8.14645C3.65829 7.95118 3.34171 7.95118 3.14645 8.14645C2.95118 8.34171 2.95118 8.65829 3.14645 8.85355L7.14645 12.8536C7.34171 13.0488 7.65829 13.0488 7.85355 12.8536L11.8536 8.85355C12.0488 8.65829 12.0488 8.34171 11.8536 8.14645C11.6583 7.95118 11.3417 7.95118 11.1464 8.14645L7.5 11.7929L3.85355 8.14645Z" />
+              </svg>
+          p.tag &lt/div&gt
+        .arrows.arrows-down 
+          p.arrows-text &ltp&gtScroll down&lt/p&gt
+          .button#button3
+            <svg class = "arrow" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.85355 2.14645C3.65829 1.95118 3.34171 1.95118 3.14645 2.14645C2.95118 2.34171 2.95118 2.65829 3.14645 2.85355L7.14645 6.85355C7.34171 7.04882 7.65829 7.04882 7.85355 6.85355L11.8536 2.85355C12.0488 2.65829 12.0488 2.34171 11.8536 2.14645C11.6583 1.95118 11.3417 1.95118 11.1464 2.14645L7.5 5.79289L3.85355 2.14645ZM3.85355 8.14645C3.65829 7.95118 3.34171 7.95118 3.14645 8.14645C2.95118 8.34171 2.95118 8.65829 3.14645 8.85355L7.14645 12.8536C7.34171 13.0488 7.65829 13.0488 7.85355 12.8536L11.8536 8.85355C12.0488 8.65829 12.0488 8.34171 11.8536 8.14645C11.6583 7.95118 11.3417 7.95118 11.1464 8.14645L7.5 11.7929L3.85355 8.14645Z" />
+            </svg>
+        p.main-tag &lt/section&gt
+      footer
+        picture.background-image
+          source(media="(min-width: 1367px)", srcset="~@/img/code3-lrDesktop@1920.webp, ~@/img/code3-lrDesktop@3840.webp 2x", type="image/webp", alt="Фон", loading="lazy")
+          source(media="(min-width: 1367px)", srcset="~@/img/code3-lrDesktop@1920.jpg, ~@/img/code3-lrDesktop@3840.jpg 2x", type="image/jpeg", alt="Фон", loading="lazy")
+          source(media="(min-width: 769px)", srcset="~@/img/code3-desktop@1366.webp, ~@/img/code3-desktop@2732.webp 2x", type="image/webp", alt="Фон", loading="lazy")
+          source(media="(min-width: 769px)", srcset="~@/img/code3-desktop@1366.jpg, ~@/img/code3-desktop@2732.jpg 2x", type="image/jpeg", alt="Фон", loading="lazy")
+          source(media="(max-width: 768px)", srcset="~@/img/code3-tablet@768.webp, ~@/img/code3-tablet@1536.webp 2x", type="image/webp", alt="Фон", loading="lazy")
+          source(media="(max-width: 768px)", srcset="~@/img/code3-tablet@768.jpg, ~@/img/code3-tablet@1536.jpg 2x", type="image/jpeg", alt="Фон", loading="lazy")
+          img.background-image(src="~@/img/code-desktop@1366.jpg", type="image/jpeg", alt="Фон", loading="lazy")
+        p.main-tag &ltfooter&gt
+        .arrows.arrows-up 
+          .button#button4
+            <svg class = "arrow" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.85355 2.14645C3.65829 1.95118 3.34171 1.95118 3.14645 2.14645C2.95118 2.34171 2.95118 2.65829 3.14645 2.85355L7.14645 6.85355C7.34171 7.04882 7.65829 7.04882 7.85355 6.85355L11.8536 2.85355C12.0488 2.65829 12.0488 2.34171 11.8536 2.14645C11.6583 1.95118 11.3417 1.95118 11.1464 2.14645L7.5 5.79289L3.85355 2.14645ZM3.85355 8.14645C3.65829 7.95118 3.34171 7.95118 3.14645 8.14645C2.95118 8.34171 2.95118 8.65829 3.14645 8.85355L7.14645 12.8536C7.34171 13.0488 7.65829 13.0488 7.85355 12.8536L11.8536 8.85355C12.0488 8.65829 12.0488 8.34171 11.8536 8.14645C11.6583 7.95118 11.3417 7.95118 11.1464 8.14645L7.5 11.7929L3.85355 8.14645Z" />
+            </svg>
+          p.arrows-text &ltp&gtScroll up&lt/p&gt
+        .footer-inner
+          .img
+            p.tag &ltimg&gt
+            img.picture(src="~@/img/photo.jpg", type="image/jpeg", alt="Аватар", loading="lazy")
+            p.tag &lt/img&gt
+          .text-about
+            p.tag &ltdiv&gt
+            .text-inner
+              .title 
+                p I am Ivan Ermakov — <br>beginner web-developer from Russia.
+                p Я Иван Ермаков — <br>начинающий веб-разработчик из Барнаула.
+              ul.langs Изучаю:
+                li.li.li-html HTML
+                li.li.li-css CSS
+                li.li.li-js JavaScript 
+                li.li.li-py Python
+              ul.stack Также использую:
+                li.li.li-pug PUG
+                li.li.li-scss SCSS
+                li.li.li-wp WebPack
+              .contact
+                a(href="mailto:ermakov.i.1995@gmail.com")  ermakov.i.1995@gmail.com
+                |, 
+                a(href="https://github.com/ermakov95") github.com/ermakov95
+            p.tag &lt/div&gt
+        .info 2021-2022 Ермаков Иван
+        p.main-tag &lt/footer&gt

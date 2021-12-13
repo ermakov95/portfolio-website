@@ -1,0 +1,29 @@
+@import "../modules/header";
+@import "../modules/arrows-and-tags";
+@import "../modules/portfolio";
+@import "../modules/footer";
+
+::-webkit-scrollbar { width: 0;}
+
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    @supports (scroll-snap-type) {
+        overflow-y: auto;
+        scroll-snap-type: mandatory;
+        scroll-snap-points-y: repeat(100vh);
+        scroll-snap-type: y mandatory;
+    }
+    @supports (scroll-behavior) {
+        scroll-behavior: smooth;
+    }
+}
+.button, .slider-button {
+    transition: all 100ms linear 0s;
+    &:hover {
+        opacity: .75;
+    }
+    &:active {
+        opacity: .5;
+    }
+}
