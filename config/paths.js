@@ -17,6 +17,6 @@ module.exports = {
 		templates: 'templates',
 	},
 	stylesGlobal: [
-		path.join(__dirname, '../src/styles/glob.scss'),
+		path.join(__dirname, '../src/styles/main.scss'),
 	],
 };
