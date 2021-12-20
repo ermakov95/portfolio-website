@@ -8,7 +8,7 @@ const sliderInnerWeight = () => {
 const slideWeight = () => {
     return slide.offsetWidth
 }
-const countSlide = Math.round(sliderLine.offsetWidth / slideWeight())
+const countSlide = sliderLine.querySelectorAll('.slide').length;
 let index = 1;
 
 document.querySelector('.slider-next').addEventListener('click', function(){
