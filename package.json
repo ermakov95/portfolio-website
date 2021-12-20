@@ -1,11 +1,11 @@
 {
-  "name": "Sedona-project",
-  "version": "2.1.0",
-  "description": "My first project - Sedona",
+  "name": "Portfolio-website",
+  "version": "2.2.0",
+  "description": "My portfolio-website.",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ermakov95/Sedona-project"
+    "url": "https://github.com/ermakov95/portfolio-website"
   },
   "author": {
     "name": "Ivan Ermakov",
