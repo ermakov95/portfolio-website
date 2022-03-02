@@ -50,6 +50,32 @@
 .slide {
     height: 100%;
     width: 70vw;
+    cursor: pointer;
+}
+.urls {
+    display: none;
+}
+.slide-opened {
+    position: relative;
+    .img-slide {
+        opacity: .3;
+    }
+    .urls {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        height: 80%;
+        width: 100%;
+    }
+    .url {
+        height: 50%;
+        font-size: 300%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #00005a;
+    }
 }
 .title-slide {
     text-align: center;
@@ -58,11 +84,13 @@
     font-size: 5vw;
     color: #00005a;
     padding: 2vw;
+    pointer-events: none;
 }
 .img-slide {
     height: 80%;
     width: 100%;
     object-fit: contain;
+    pointer-events: none;
 }
 @media screen and (min-aspect-ratio: 1/1) {
     @media (min-width: $phoneWidth) {

@@ -30,3 +30,7 @@ document.querySelector('.slider-back').addEventListener('click', function(){
     }
     sliderLine.style.left = -((index-1)*slideWeight()) + 'px';
 });
+
+document.querySelector('.slider-line').addEventListener('click', (event) => {
+    event.path[0].classList.toggle('slide-opened')
+})

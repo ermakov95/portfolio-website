@@ -45,12 +45,12 @@ header {
 }
 .main-heading {
     color: #00005a;
-    font-size: 4.53vw;
+    font-size: 5.1vw;
     overflow: hidden;
     border-right: .1em solid #00005a;
     white-space: nowrap;
     animation: 
-    heading-typing 4s steps(44, start) .5s backwards,
+    heading-typing 4s steps(39, start) .5s backwards,
     heading-caret 1s step-end infinite .5s backwards;
 }
 @keyframes heading-typing {

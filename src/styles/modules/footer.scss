@@ -49,47 +49,64 @@ footer {
 .langs {
     grid-column: 1/2;
     grid-row: 2/3;
-    padding: 2vw 0 1vw 15vw;
+    padding: 2vw 0 1vw 10vw;
 }
 .stack {
     grid-column: 2/3;
     grid-row: 2/3;
-    padding: 2vw 0 1vw 15vw;
+    padding: 2vw 0 1vw 10vw;
 }
 .li {
     position: relative;
     margin-top: 2vw;
+    white-space: nowrap;
+    width: min-content;
 }
-.li::before {
+.li::before, .li::after {
     content: '';
     display: inline-block;
     position: absolute;
     top: 0;
-    left: -7vw;
     height: 4.5vw;
     width: 4.5vw;
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
 }
-.li-html::before {
+.li::before {
+    left: -7vw;
+}
+.li::after {
+    right: -7vw;
+}
+.li-html-css::before {
     background-image: url('~@/img/html5.svg')
 }
-.li-css::before {
+.li-html-css::after {
     background-image: url('~@/img/css3.svg')
 }
 .li-js::before {
     background-image: url('~@/img/js.svg')
 }
-.li-py::before {
-    background-image: url('~@/img/py.svg')
+.li-r-n::before {
+    background-image: url('~@/img/react.svg')
 }
-.li-wp::before {
+.li-r-n::after {
+    background-image: url('~@/img/nextjs.svg')
+}
+.li-ts::before {
+    background-image: url('~@/img/ts.svg')
+}
+.li-wp-gulp::before {
     background-image: url('~@/img/wp.svg')
 }
-.li-pug::before {
+.li-wp-gulp::after {
+    background-image: url('~@/img/gulp.svg')
+}
+.li-scss-pug::after {
     background-image: url('~@/img/pug.svg')
 }
-.li-scss::before {
+.li-scss-pug::before {
     background-image: url('~@/img/scss.svg')
 }
 
@@ -117,6 +134,11 @@ footer {
     }
     .li::before {
         left: -6vw;
+        height: 4vw;
+        width: 4vw;
+    }
+    .li::after {
+        right: -6vw;
         height: 4vw;
         width: 4vw;
     }
@@ -156,13 +178,18 @@ footer {
             padding-top: 0;
         }
         .langs, .stack {
-            padding: 1vw 0 1vw 10vw;
+            padding: 1vw 0 1vw 3.33vw;
         }
         .li {
             margin-top: 1vw;
         }
         .li::before {
             left: -5vw;
+            height: 3vw;
+            width: 3vw;
+        }
+        .li::after {
+            right: -5vw;
             height: 3vw;
             width: 3vw;
         }
@@ -189,10 +216,15 @@ footer {
             display: none;
         }
         .langs, .stack {
-            padding: 1vw 0 1vw 15vw;
+            padding: 1vw 0 1vw 5vw;
         }
         .li::before {
             left: -5vw;
+            height: 2.5vw;
+            width: 2.5vw;
+        }
+        .li::after {
+            right: -5vw;
             height: 2.5vw;
             width: 2.5vw;
         }
@@ -223,13 +255,18 @@ footer {
             font-size: 2vw;
         }
         .langs, .stack {
-            padding: 1vw 0 1vw 10vw;
+            padding: 1vw 0 1vw 3.33vw;
         }
         .li {
             margin-top: 1vw;
         }
         .li::before {
             left: -4vw;
+            height: 2vw;
+            width: 2vw;
+        }
+        .li::after {
+            right: -4vw;
             height: 2vw;
             width: 2vw;
         }

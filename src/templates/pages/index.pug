@@ -4,7 +4,7 @@ html(lang="ru")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(name="description", content="Сайт-портфолио начинающего веб-разработчика И.Ермакова")
+    meta(name="description", content="Сайт-портфолио фронтенд-разработчика И.Ермакова")
     title Portfolio
   body
     .wrap
@@ -23,9 +23,9 @@ html(lang="ru")
           .greeting hello there!
           p.tag &lt/div&gt
           p.tag &lth1&gt
-          h1.main-heading I am Ivan Ermakov — beginner web-developer.
+          h1.main-heading I'm Ivan Ermakov — front-end developer.
           .space
-          .main-heading Я Иван Ермаков — начинающий веб-разработчик.
+          .main-heading Я Иван Ермаков — фронтенд-разработчик.
           p.tag &lt/h1&gt
         .arrows.arrows-down 
           p.arrows-text &ltp&gtScroll down&lt/p&gt
@@ -59,15 +59,18 @@ html(lang="ru")
               </svg>
             .slider-inner 
               .slider-line
-                a.slide(href="./mriya/index.html")
-                  .title-slide Mriya-Resort
-                  img.img-slide(src="~@/img/mriya.jpg", loading="lazy", alt="Mriya-Resort")
+                .slide
+                  .title-slide MriyaResort {JS/React.JS}
+                  img.img-slide(src="~@/img/mriya.jpg", loading="lazy", alt="Mriya-Resort(JS/React.JS)")
+                  .urls 
+                    a.url(href="./MriyaResort-VanillaJS/index.html") VanillaJS
+                    a.url(href="./MriyaResort-React.JS/index.html") React.JS
                 a.slide(href="./todo/index.html")
-                  .title-slide Заметки с todo-пунктами
+                  .title-slide ToDoNotes 
                   picture.img-slide
-                    source(src="~@/img/todo.webp", type="image/webp", alt="Заметки с todo-пунктами", loading="lazy")
-                    source(src="~@/img/todo.jpg", type="image/jpeg", alt="Заметки с todo-пунктами", loading="lazy")
-                    img.img-slide(src="~@/img/todo.jpg", loading="lazy", alt="Заметки с todo-пунктами")
+                    source(src="~@/img/todo.webp", type="image/webp", alt="ToDoNotes", loading="lazy")
+                    source(src="~@/img/todo.jpg", type="image/jpeg", alt="ToDoNotes", loading="lazy")
+                    img.img-slide(src="~@/img/todo.jpg", loading="lazy", alt="ToDoNotes")
                 a.slide(href="./luxtrips/index.html")
                   .title-slide LuxTrips
                   picture.img-slide
@@ -75,11 +78,11 @@ html(lang="ru")
                     source(src="~@/img/luxtrips.jpg", type="image/jpeg", alt="LuxTrips", loading="lazy")
                     img.img-slide(src="~@/img/luxtrips.jpg", loading="lazy", alt="LuxTrips")
                 a.slide(href="./poker/index.html")
-                  .title-slide One-poker-page
+                  .title-slide OnePokerPage
                   picture.img-slide
-                    source(src="~@/img/poker.webp", type="image/webp", alt="One-poker-page", loading="lazy")
-                    source(src="~@/img/poker.jpg", type="image/jpeg", alt="One-poker-page", loading="lazy")
-                    img.img-slide(src="~@/img/poker.jpg", loading="lazy", alt="One-poker-page")
+                    source(src="~@/img/poker.webp", type="image/webp", alt="OnePokerPage", loading="lazy")
+                    source(src="~@/img/poker.jpg", type="image/jpeg", alt="OnePokerPage", loading="lazy")
+                    img.img-slide(src="~@/img/poker.jpg", loading="lazy", alt="OnePokerPage")
                 a.slide(href="./sedona/index.html")
                   .title-slide Sedona
                   picture.img-slide
@@ -129,16 +132,17 @@ html(lang="ru")
             p.tag &ltdiv&gt
             .text-inner
               .title 
-                p I am Ivan Ermakov — <br>beginner web-developer from Russia.
-                p Я Иван Ермаков — <br>начинающий веб-разработчик из Барнаула.
+                p I am Ivan Ermakov — <br>front-end developer from Russia.
+                p Я Иван Ермаков — <br>фронтенд-разработчик из Барнаула.
               ul.langs Навыки:
-                li.li.li-html HTML
-                li.li.li-css CSS
+                li.li.li-html-css HTML, CSS
+                li.li.li-css 
                 li.li.li-js JavaScript
+                li.li.li-r-n React.JS, Next.JS
+                li.li.li-ts TypeScript
               ul.stack Также использую:
-                li.li.li-pug PUG
-                li.li.li-scss SCSS
-                li.li.li-wp WebPack
+                li.li.li-scss-pug SCSS, PUG
+                li.li.li-wp-gulp WebPack, Gulp
               .contact
                 a(href="mailto:ermakov.i.1995@gmail.com")  ermakov.i.1995@gmail.com
                 |, 

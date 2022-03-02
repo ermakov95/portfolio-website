@@ -1,3 +1,1 @@
-# portfolio-website
-My portfolio-website.
-Мой сайт-портфолио.
+## Vanilla.JS, PUG, SCSS, Webpack
